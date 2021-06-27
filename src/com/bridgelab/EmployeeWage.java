@@ -6,7 +6,10 @@ public class EmployeeWage {
     static int FULL_WORK_HOUR=8;
     static int PART_WORK_HOUR=4;
     static int WORKING_DAYS=20;
-    public static void main(String[] args){
+    /**
+     *calculating employee total wage per month.
+     */
+    public static void employeeTotalWage(){
         int empHrs=0;
         int dailyWage;
         int totalWage = 0;
@@ -32,5 +35,9 @@ public class EmployeeWage {
             totalWorkingHrs+=empHrs;
         }
         System.out.println("Salary per month is:"+totalWage);
+    }
+
+    public static void main(String[] args) {
+        employeeTotalWage();
     }
 }
