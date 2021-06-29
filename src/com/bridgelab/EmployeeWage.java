@@ -38,5 +38,6 @@ public class EmployeeWage {
     public static void main(String[] args) {
         employeeTotalWage("jio",20,20);
         employeeTotalWage("Adani power",25,18);
+        employeeTotalWage("bridgeLabz",18,18);
     }
 }
