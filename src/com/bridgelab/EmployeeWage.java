@@ -8,7 +8,7 @@ public class EmployeeWage {
      * @param wagePerHour
      * @param workingDays
      */
-    public static void employeeTotalWage(String company,int wagePerHour,int workingDays){
+    public void employeeTotalWage(String company,int wagePerHour,int workingDays){
         int empHrs=0;
         int dailyWage;
         int totalWage = 0;
@@ -36,8 +36,8 @@ public class EmployeeWage {
      * @param args
      */
     public static void main(String[] args) {
-        employeeTotalWage("jio",20,20);
-        employeeTotalWage("Adani power",25,18);
-        employeeTotalWage("bridgeLabz",18,18);
+        EmployeeWage employeeWage = new EmployeeWage();
+        employeeWage.employeeTotalWage("jio",20,20);
+        employeeWage.employeeTotalWage("Adani power",25,18);
     }
 }
